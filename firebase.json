@@ -15,11 +15,17 @@
     }
   ],
   "hosting": {
-    "public": "y",
+    "public": "src",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/app.html"
+      }
     ]
   },
   "emulators": {
